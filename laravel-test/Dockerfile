@@ -3,14 +3,6 @@ FROM composer
 # Use PHP as primary language
 FROM php
 
-# Suppress the do-not-run-as-root warning from composer
-ENV COMPOSER_ALLOW_SUPERUSER 1
-
-# Add Composer
-COPY --from=composer /usr/bin/composer /usr/bin/composer
-# Add Node 8 LTS
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash --
-
 # Update, upgrade and install some dependencies
 RUN apt-get update \
 	&& apt-get upgrade -y \
@@ -29,6 +21,15 @@ RUN docker-php-ext-install \
 # Install and enable xdebug
 RUN pecl install xdebug \
 	&& docker-php-ext-enable xdebug
+
+# Add Node 8 LTS
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash --
+
+# Add Composer
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+
+# Suppress the do-not-run-as-root warning from composer
+ENV COMPOSER_ALLOW_SUPERUSER 1
 
 # Show the versions of PHP, Node, Composer and NPM
 CMD \
