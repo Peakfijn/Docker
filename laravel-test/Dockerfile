@@ -1,7 +1,7 @@
 # Use the multi-stage feature to import Composer securely
-FROM composer
+FROM composer:1.6
 # Use PHP as primary language
-FROM php
+FROM php:7.1-cli
 
 # Update, upgrade and install some dependencies
 RUN apt-get update \
