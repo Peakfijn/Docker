@@ -10,7 +10,6 @@ RUN apt-get update \
 		git \
 		libpng-dev \
 		libsqlite3-dev \
-		nodejs \
 		unzip \
 	&& apt-get autoremove -y
 
@@ -24,6 +23,7 @@ RUN pecl install xdebug \
 
 # Add Node 8 LTS
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash --
+RUN apt-get install -y nodejs
 
 # Add Composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
