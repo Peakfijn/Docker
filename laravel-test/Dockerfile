@@ -22,8 +22,10 @@ RUN pecl install xdebug \
 	&& docker-php-ext-enable xdebug
 
 # Add Node 8 LTS
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash --
-RUN apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -- \
+	&& apt-get install -y \
+		nodejs \
+	&& apt-get autoremove -y
 
 # Add Composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
