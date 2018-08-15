@@ -1,0 +1,32 @@
+{
+	"name": "docker",
+	"version": "0.0.0",
+	"private": true,
+	"description": "A set of docker images that we use",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"changelog": "conventional-changelog -p peakfijn -i CHANGELOG.md -s -r 0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peakfijn/docker.git"
+	},
+	"author": "Cedric van Putten <cedric@peakfijn.nl>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/peakfijn/docker/issues"
+	},
+	"homepage": "https://github.com/peakfijn/docker#readme",
+	"dependencies": {
+		"@semantic-release/changelog": "^3.0.0",
+		"chalk": "^2.4.1",
+		"conventional-changelog-cli": "^2.0.1",
+		"conventional-changelog-peakfijn": "^0.5.0",
+		"execa": "^0.10.0",
+		"ora": "^3.0.0",
+		"release-rules-peakfijn": "^0.5.0",
+		"semantic-release": "^15.9.5",
+		"semantic-release-git-branches": "^1.2.1"
+	}
+}

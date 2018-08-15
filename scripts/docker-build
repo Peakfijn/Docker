@@ -1,0 +1,52 @@
+#!/usr/bin/env node
+'use strict';
+
+const chalk = require('chalk');
+const ora = require('ora');
+
+const { findImages, buildImage, pushImage } = require('./util-docker');
+const { logInfo, logError } = require('./util-output');
+
+const branchToTag = {
+	develop: 'develop',
+	master: 'latest',
+};
+
+const spinner = ora();
+const program = async (batch) => {
+	spinner.start('Searching docker images');
+
+	const dockerImages = await findImages(batch, ['ci-node', 'serve']);
+	const dockerTags = [
+		process.env.TRAVIS_COMMIT && process.env.TRAVIS_COMMIT.substring(0, 7),
+		process.env.TRAVIS_TAG,
+		branchToTag[process.env.BRANCH],
+	].filter(name => !!name);
+
+	spinner.stop();
+	logInfo(
+		chalk`Found {bold ${dockerImages.length} images}`,
+		...dockerImages.map(
+			(image, index) => chalk`  {dim ${index + 1}. {underline ${image.name}}}`
+		)
+	);
+
+	for (const image of dockerImages) {
+		spinner.start(chalk`Building {bold ${image.name}}...`);
+		await buildImage(image);
+		spinner.succeed(chalk`Built {bold ${image.name}}`);
+		for (const tag of dockerTags) {
+			spinner.start(chalk`Pushing {bold ${image.name}} with {bold ${tag}}...`);
+			await pushImage(image, tag);
+			spinner.succeed(chalk`Pushed {bold ${image.name}} with {bold ${tag}}`);
+		}
+	}
+};
+
+program(process.argv[2])
+	.then(status => process.exit(status))
+	.catch(error => {
+		spinner.stop();
+		logError(error);
+		process.exit(1);
+	});
