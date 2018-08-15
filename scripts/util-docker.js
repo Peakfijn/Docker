@@ -60,7 +60,7 @@ async function findImages(pattern = '', priorities = []) {
  * @return {void}
  */
 async function buildImage(image) {
-	await execa('docker', ['build', '-t', `bycedric/${image.name}:new`, image.path]);
+	await execa('docker', ['build', '-t', `peakfijn/${image.name}:new`, image.path]);
 }
 
 /**
@@ -71,8 +71,8 @@ async function buildImage(image) {
  * @return {void}
  */
 async function pushImage(image, tag) {
-	await execa('docker', ['tag', `bycedric/${image.name}:new`, `bycedric/${image.name}:${tag}`]);
-	await execa('docker', ['push', `bycedric/${image.name}:${tag}`]);
+	await execa('docker', ['tag', `peakfijn/${image.name}:new`, `peakfijn/${image.name}:${tag}`]);
+	await execa('docker', ['push', `peakfijn/${image.name}:${tag}`]);
 }
 
 module.exports = {
