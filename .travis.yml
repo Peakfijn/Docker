@@ -22,6 +22,9 @@ jobs:
     - stage: Build images
       name: release
       script: ./scripts/docker-build release
+    - stage: Build images
+      name: commitlint
+      script: ./scripts/docker-build commitlint
     - stage: Create release
       name: semantic-release
       script: npx semantic-release
