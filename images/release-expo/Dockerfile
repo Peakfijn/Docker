@@ -6,6 +6,6 @@ RUN apk add --no-cache \
 		git \
 		openssh-client \
 	&& npm install -g \
-		semantic-release \
 		@peakfijn/config-release-expo \
+		semantic-release \
 	&& npm cache rm --force
