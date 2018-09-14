@@ -1,3 +1,21 @@
+# [1.1.0](https://github.com/peakfijn/docker/compare/1.0.0...1.1.0) (2018-09-14)
+
+
+### Code refactors
+
+* upgrade to new peakfijn conventions ([6070276](https://github.com/peakfijn/docker/commit/6070276))
+
+
+### Documentation changes
+
+* add github issue and pull request templates ([f3ef743](https://github.com/peakfijn/docker/commit/f3ef743))
+
+
+### New features
+
+* **commitlint:** add preinstalled commitlint image ([#3](https://github.com/peakfijn/docker/issues/3)) ([80b8d26](https://github.com/peakfijn/docker/commit/80b8d26))
+* **release-react:** add preinstalled semantic release laravel image ([a0de045](https://github.com/peakfijn/docker/commit/a0de045))
+
 # 1.0.0 (2018-08-15)
 
 
