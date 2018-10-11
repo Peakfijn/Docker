@@ -6,4 +6,5 @@ RUN apk add --no-cache git \
 	&& npm install -g \
 		@peakfijn/config-commitlint \
 		commitlint \
+		commitlint-format-junit \
 	&& npm cache rm --force
