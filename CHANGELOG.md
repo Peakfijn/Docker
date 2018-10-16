@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/peakfijn/docker/compare/1.1.0...1.2.0) (2018-10-16)
+
+
+### New features
+
+* **commitlint:** add junit support to commitlint for bitbucket pipelines ([#5](https://github.com/peakfijn/docker/issues/5)) ([992dc41](https://github.com/peakfijn/docker/commit/992dc41))
+
+
+### Pipeline changes
+
+* enable building commitlint images ([8c70745](https://github.com/peakfijn/docker/commit/8c70745))
+
 # [1.1.0](https://github.com/peakfijn/docker/compare/1.0.0...1.1.0) (2018-09-14)
 
 
