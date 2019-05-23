@@ -1,4 +1,4 @@
-FROM bycedric/ci-node
+FROM node:10-alpine
 
 LABEL maintainer 'Cedric van Putten <cedric@peakfijn.nl>'
 
