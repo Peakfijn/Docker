@@ -1,3 +1,15 @@
+## [1.2.1](https://github.com/peakfijn/docker/compare/1.2.0...1.2.1) (2019-05-23)
+
+
+### Code refactors
+
+* use official node lts alpine images ([#7](https://github.com/peakfijn/docker/issues/7)) ([d125d59](https://github.com/peakfijn/docker/commit/d125d59))
+
+
+### Other chores
+
+* upgrade lodash from 4.17.10 to 4.17.11 ([#8](https://github.com/peakfijn/docker/issues/8)) ([2485c0e](https://github.com/peakfijn/docker/commit/2485c0e))
+
 # [1.2.0](https://github.com/peakfijn/docker/compare/1.1.0...1.2.0) (2018-10-16)
 
 
