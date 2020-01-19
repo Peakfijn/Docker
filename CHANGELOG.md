@@ -1,3 +1,15 @@
+## [1.2.2](https://github.com/peakfijn/docker/compare/1.2.1...1.2.2) (2020-01-19)
+
+
+### Other chores
+
+* bump handlebars from 4.0.11 to 4.4.5 ([#11](https://github.com/peakfijn/docker/issues/11)) ([](https://github.com/peakfijn/docker/commit/409ec69))
+* bump js-yaml from 3.12.0 to 3.13.1 ([#13](https://github.com/peakfijn/docker/issues/13)) ([](https://github.com/peakfijn/docker/commit/435c6f2))
+* bump lodash from 4.17.11 to 4.17.15 ([#10](https://github.com/peakfijn/docker/issues/10)) ([](https://github.com/peakfijn/docker/commit/f607929))
+* bump lodash.template from 4.4.0 to 4.5.0 ([#12](https://github.com/peakfijn/docker/issues/12)) ([](https://github.com/peakfijn/docker/commit/07dc9e4))
+* bump mixin-deep from 1.3.1 to 1.3.2 ([#9](https://github.com/peakfijn/docker/issues/9)) ([](https://github.com/peakfijn/docker/commit/cdef9e3))
+* update all dependencies ([#15](https://github.com/peakfijn/docker/issues/15)) ([](https://github.com/peakfijn/docker/commit/0911f33))
+
 ## [1.2.1](https://github.com/peakfijn/docker/compare/1.2.0...1.2.1) (2019-05-23)
 
 
