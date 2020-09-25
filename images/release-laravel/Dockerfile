@@ -1,6 +1,6 @@
 FROM node:12-alpine
 
-LABEL maintainer 'Cedric van Putten <cedric@peakfijn.nl>'
+LABEL maintainer 'Peakfijn <online@peakfijn.nl>'
 
 RUN apk add --no-cache \
 		git \

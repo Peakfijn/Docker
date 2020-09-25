@@ -1,6 +1,6 @@
 # React - Peakfijn Releases
 
-A simple Node image based on Alpine Linux, preinstalled with Semantic Release for React.
+A simple Node image based on Alpine Linux, pre-installed with Semantic Release for React.
 
 ## Performance tweaks
 
