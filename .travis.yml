@@ -20,7 +20,7 @@ stages:
 jobs:
   include:
     - stage: Build images
-      name: release
+      name: CI
       script: ./scripts/docker-build ci
     - stage: Build images
       name: release
