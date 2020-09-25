@@ -1,6 +1,6 @@
 # Expo - Peakfijn Releases
 
-A simple Node image based on Alpine Linux, preinstalled with Semantic Release for Expo.
+A simple Node image based on Alpine Linux, pre-installed with Semantic Release for Expo.
 
 ## Performance tweaks
 

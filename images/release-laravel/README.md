@@ -1,6 +1,6 @@
 # Laravel - Peakfijn Releases
 
-A simple Node image based on Alpine Linux, preinstalled with Semantic Release for Laravel.
+A simple Node image based on Alpine Linux, pre-installed with Semantic Release for Laravel.
 
 ## Performance tweaks
 

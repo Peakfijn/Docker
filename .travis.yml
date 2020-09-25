@@ -21,6 +21,9 @@ jobs:
   include:
     - stage: Build images
       name: release
+      script: ./scripts/docker-build ci
+    - stage: Build images
+      name: release
       script: ./scripts/docker-build release
     - stage: Build images
       name: commitlint
