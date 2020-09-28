@@ -1,3 +1,18 @@
+# [1.3.0](https://github.com/peakfijn/docker/compare/1.2.2...1.3.0) (2020-09-28)
+
+
+### New features
+
+* added Heroku CI as Docker image ([](https://github.com/peakfijn/docker/commit/8e95a5a))
+
+
+### Other chores
+
+* bump lodash from 4.17.15 to 4.17.19 ([](https://github.com/peakfijn/docker/commit/97b0197))
+* bump node-fetch from 2.6.0 to 2.6.1 ([](https://github.com/peakfijn/docker/commit/2d74e48))
+* bump npm from 6.13.6 to 6.14.6 ([](https://github.com/peakfijn/docker/commit/9ed3d21))
+* updated stage name for CI ([](https://github.com/peakfijn/docker/commit/52d6378))
+
 ## [1.2.2](https://github.com/peakfijn/docker/compare/1.2.1...1.2.2) (2020-01-19)
 
 
