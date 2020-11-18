@@ -26,7 +26,7 @@
 		"execa": "^4.0.0",
 		"ora": "^4.0.3",
 		"release-rules-peakfijn": "^2.1.0",
-		"semantic-release": "^15.14.0",
+		"semantic-release": "^17.2.3",
 		"semantic-release-git-branches": "^1.2.1"
 	}
 }
